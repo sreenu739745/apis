@@ -12,8 +12,8 @@ spec:
       labels:
         app: api
     spec:
-      containers:
-      - name: api-container
-        image: sreenu727/apis:latest   # ✅ IMPORTANT
-        ports:
-        - containerPort: 3000
+containers:
+  - name: sample-api
+    image: sreenu727/apis:latest
+    ports:
+      - containerPort: 3000
