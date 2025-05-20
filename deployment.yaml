@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-api
+  name: api-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: sample-api
+      app: api
   template:
     metadata:
       labels:
-        app: sample-api
+        app: api
     spec:
       containers:
-      - name: sample-api
-        image: your-dockerhub-username/sample-k8s-api:latest
+      - name: api-container
+        image: sreenu727/apis:latest   # ✅ IMPORTANT
         ports:
         - containerPort: 3000
