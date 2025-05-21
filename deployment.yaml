@@ -12,8 +12,8 @@ spec:
       labels:
         app: api
     spec:
-containers:
-  - name: sample-api
-    image: sreenu727/apis:latest
-    ports:
-      - containerPort: 3000
+      containers:  # ← this was incorrectly indented
+        - name: sample-api
+          image: sreenu727/apis:latest
+          ports:
+            - containerPort: 3000
