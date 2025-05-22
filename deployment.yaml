@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deployment
+  name: sample-api
 spec:
   replicas: 1
   selector:
@@ -12,7 +12,7 @@ spec:
       labels:
         app: api
     spec:
-      containers:  # ← this was incorrectly indented
+      containers:
         - name: sample-api
           image: sreenu727/apis:latest
           ports:
