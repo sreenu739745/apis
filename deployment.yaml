@@ -12,8 +12,9 @@ spec:
       labels:
         app: api
     spec:
-      containers:
-        - name: sample-api
-          image: sreenu727/apis:latest
-          ports:
-            - containerPort: 3000
+   containers:
+  - name: sample-api
+    image: sreenu727/apis:latest  # Confirm this is correct
+    ports:
+      - containerPort: 3000
+
